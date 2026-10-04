@@ -1,0 +1,25 @@
+<launch>
+  <include file="$(find reactive_robot_sim)/launch/reactive_robot_sim.launch"/>
+  <node pkg="reactive_robot" type="roverOdev.py" name="roverOdev" output="screen">
+   
+
+    <param name="maksimumIleriHiz" value="0.3"/>
+    <param name="minimumIleriHiz" value="0.06"/>
+    <param name="maksimumDonusHiz" value="1.5"/>
+    <param name="tahminSuresi" value="1.5"/>
+    <param name="adimSuresi" value="0.1"/>
+    <param name="robot_radius" value="0.205"/>
+    <param name="lazerX" value="-0.032"/>
+    <param name="lazerY" value="0.0"/>
+    <param name="ilerlemeAgirligi" value="2.0"/>
+    <param name="donusDegisimAgirligi" value="0.1"/>
+    <param name="lazerZamanAsimi" value="0.5"/>
+    <param name="maksimumYonFarki" value="1.5"/>
+    <param name="hedefAramaMesafesi" value="3.0"/>
+  
+    <param name="hedefYonAgirligi" value="0.7"/>
+    <param name="yonAdaySayisi" value="71"/>
+    <param name="hizAdaySayisi" value="8"/>
+    <param name="donusAdaySayisi" value="21"/>
+  </node>
+</launch>
